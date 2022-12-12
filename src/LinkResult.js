@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import CopyToClipboard from 'react-copy-to-clipboard';
 import axios from "axios"
 
 const LinkResult = ({inputValue}) => {
@@ -43,10 +43,10 @@ const LinkResult = ({inputValue}) => {
   return (
     <>
    { shortenLink &&(
-    <div class="result">
+    <div className="result">
  <p>{shortenLink}</p>
  <CopyToClipboard text={shortenLink} onCopy={()=> setCopied(true)}>
-<button className={copied ? "copied":""}> copy to clipboard</button>
+<button className={copied ? "copied" : ""}> copy to clipboard</button>
 </CopyToClipboard>
 
 
