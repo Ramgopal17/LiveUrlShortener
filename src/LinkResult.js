@@ -5,7 +5,7 @@ import axios from "axios"
 
 const LinkResult = ({inputValue}) => {
     console.log(inputValue);
-    const [shortenLink,setShortenLink]=useState(" ")
+    const [shortenLink,setShortenLink]=useState("")
     const [copied,setCopied]=useState(false)
     const [loading,setLoading]=useState(false)
     const [err,setErr]=useState(false)
